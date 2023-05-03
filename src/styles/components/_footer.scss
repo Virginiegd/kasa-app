@@ -1,0 +1,46 @@
+// Footer
+
+footer {
+    width: 100%;
+
+    .footer__contend {
+        background-color: black;
+        color: $color-tertiary;
+        padding: 66px 0px 20px 0px;
+        text-align: center;
+        height: 209px;
+        width: 100%;
+
+        p {
+            font-size: 24px;
+        }
+    }
+
+    .footer__logo {
+        width: 122px;
+        height: 39px;
+    }
+}
+
+// Tablette 
+@media screen and (max-width: 1236px) {
+    footer {
+        .footer__contend {
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+
+}
+
+// Mobile
+@media screen and (max-width:768px) {
+    footer {
+        .footer__contend {
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+// Carrousel de la page Appartement
+
+.slider__photo {
+    height: 415px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+// Tablette/Mobile
+
+@media screen and (max-width:1236px) {
+    .slider__photo {
+        height: 255px;
+        border-radius: 10px;
+    }
+}

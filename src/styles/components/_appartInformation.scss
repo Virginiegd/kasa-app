@@ -1,0 +1,196 @@
+// Information appartement
+
+.appart__container {
+
+    .info__container {
+        display: flex;
+        justify-content: space-between;
+
+        .appart__info {
+            margin-top: 10px;
+
+            h1 {
+                margin-top: 0px;
+                font-size: 36px;
+                color: $color-primary;
+                font-weight: $font-500;
+                margin-bottom: 0;
+            }
+
+            p {
+                color: $color-primary;
+                font-weight: $font-500;
+                margin-top: 5px;
+                margin-bottom: 10px;
+            }
+
+            .appart__tag {
+                display: flex;
+
+                li {
+                    color: $color-secondary;
+                    font-weight: $font-500;
+                    margin-top: 0;
+                    background-color: $color-primary;
+                    padding: 5px 10px;
+                    border-radius: 10px;
+                    margin-right: 15px;
+                    font-size: 14px;
+                    min-width: max-content;
+                }
+            }
+        }
+
+        .appart__owner {
+            align-items: center;
+
+            .appart__plus {
+                display: flex;
+                align-items: center;
+
+                p {
+                    margin-right: 20px;
+                    width: min-content;
+                    text-align: right;
+                    padding-left: 25px;
+                    color: $color-primary;
+                    font-weight: $font-500;
+                }
+
+                div {
+                    height: 64px;
+
+                    img {
+                        border-radius: 65px;
+                        height: 64px;
+                        min-width: min-content;
+                    }
+                }
+            }
+        }
+    }
+
+    .appart__description {
+        margin-top: 0px;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            .accordion__contend {
+                margin: 25px 0px 25px 0px;
+                width: 45%;
+
+                .heading {
+                    font-size: 18px;
+                }
+
+                .accordion__content {
+                    font-size: 18px;
+                    margin-top: 0px;
+
+                    p {
+                        margin: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Tablette
+@media screen and (max-width:1236px) {
+    .appart__container {
+        .info__container {
+            .appart__info {
+                h1 {
+                    font-size: 26px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .appart__description {
+
+            ul {
+                .accordion__contend {
+                    margin: 15px 0px 15px 0px;
+                }
+            }
+        }
+    }
+}
+
+// Mobile
+@media screen and (max-width:768px) {
+    .appart__container {
+        .info__container {
+            flex-direction: column;
+
+            .appart__info {
+                flex-direction: column;
+
+                h1 {
+                    font-size: 18px;
+                }
+
+                .appart__tag {
+
+                    li {
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            .appart__owner {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-items: center;
+
+                .appart__plus {
+
+                    p {
+                        font-size: 12px;
+                    }
+
+                    div {
+                        height: 32px;
+
+                        img {
+                            height: 32px;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .appart__description {
+            ul {
+
+                flex-direction: column;
+
+                .accordion__contend {
+                    margin: 10px 0px 10px 0px;
+                    width: 100%;
+
+                    .accordion__heading {
+                        .heading {
+                            font-size: 13px;
+                        }
+                    }
+
+                    .accordion__content {
+                        font-size: 12px;
+
+                    }
+                }
+            }
+        }
+    }
+}

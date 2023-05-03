@@ -1,0 +1,53 @@
+// Spécificité du collapse de la page A propos (comoosant accordion)
+
+.accordion__contend {
+    margin: 25px 108px 25px 108px;
+
+    .accordion__heading {
+        .heading {
+            font-size: 24px;
+        }
+    }
+
+    .accordion__content {
+        font-size: 24px;
+    }
+}
+
+
+// Tablette 
+
+@media screen and (max-width: 1236px) {
+    .accordion__contend {
+        margin: 25px 0px 25px 0px;
+
+        .accordion__heading {
+            .heading {
+                font-size: 18px;
+            }
+        }
+
+        .accordion__content {
+            font-size: 17px;
+        }
+    }
+}
+
+
+// Mobile
+
+@media screen and (max-width:768px) {
+
+    .accordion__contend {
+        .accordion__heading {
+            .heading {
+                font-size: 13px;
+            }
+        }
+
+        .accordion__content {
+            font-size: 12px;
+        }
+    }
+
+}

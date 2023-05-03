@@ -1,0 +1,68 @@
+// Slider (carrousel)
+
+.container__slider {
+    width: 100%;
+    position: relative;
+    height: 415px;
+
+    .leftArrowStyles {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        left: 32px;
+        color: $color-tertiary;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    .rightArrowStyles {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        right: 32px;
+        color: $color-tertiary;
+        z-Index: 1;
+        cursor: pointer;
+    }
+
+    .slider__counter {
+        position: absolute;
+        bottom: 0%;
+        width: 100%;
+
+        p {
+            color: $color-tertiary;
+            text-align: center;
+            font-weight: $font-500;
+        }
+    }
+}
+
+// Tablette
+@media screen and (max-width:1236px) {
+    .container__slider {
+        height: 255px;
+
+        .leftArrowStyles {
+            height: 19px;
+            width: 12px;
+            left: 10px;
+        }
+
+        .rightArrowStyles {
+            height: 19px;
+            width: 12px;
+            right: 10px;
+        }
+    }
+}
+
+// Mobile
+@media screen and (max-width:768px) {
+
+    .container__slider {
+        .slider__counter {
+            display: none;
+        }
+    }
+}

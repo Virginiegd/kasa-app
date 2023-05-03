@@ -1,0 +1,42 @@
+// Banner page Home
+
+.banner__contend {
+    display: flex;
+    justify-content: center;
+    @extend .banner;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/banner1.png);
+
+    h1 {
+        font-size: 48px;
+        color: $color-tertiary;
+        font-weight: $font-500;
+    }
+}
+
+// Tablette 
+
+@media screen and (max-width: 1236px) {
+    .banner__contend {
+        height: 150px;
+        border-radius: 25px;
+
+        h1 {
+            font-size: 32px;
+        }
+    }
+}
+
+// Mobile
+
+@media screen and (max-width:768px) {
+    .banner__contend {
+        height: 111px;
+        border-radius: 10px;
+        background-position: bottom;
+
+        h1 {
+            margin: 0px 80px 0px 16px;
+            font-size: 24px;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+// Composant accordion
+
+.accordion__contend {
+    .accordion__heading {
+        background: $color-primary;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 10px 0px 10px;
+        border-radius: 5px;
+
+        .heading {
+            margin: 0;
+            color: $color-tertiary;
+            font-weight: $font-500;
+            display: block;
+        }
+
+        .heading__buttonOpen {
+            background-color: transparent;
+            border: none;
+            color: $color-tertiary;
+            transform: rotate(180deg);
+        }
+
+        .heading__buttonClose {
+            background-color: transparent;
+            border: none;
+            color: $color-tertiary;
+        }
+    }
+
+    .accordion__content {
+        background: #F6F6F6;
+        color: $color-primary;
+        margin-top: 0;
+        padding: 15px 27px 19px 18px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+
+    }
+}
+
+
+// Tablette 
+
+@media screen and (max-width: 1236px) {
+    .accordion__contend {
+        margin: 25px 50px 25px 50px;
+    }
+}
+
+
+// Mobile
+
+@media screen and (max-width:768px) {
+
+    .accordion__contend {
+        margin: 25px 0px 25px 0px;
+    }
+
+}

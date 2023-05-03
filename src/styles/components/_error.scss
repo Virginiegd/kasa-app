@@ -1,0 +1,61 @@
+// Page Error404
+
+.error__contend {
+    color: $color-primary;
+    text-align: center;
+
+    h1 {
+        font-size: 288px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 36px;
+        font-weight: $font-500;
+        margin-top: 0px;
+        margin-bottom: 100px;
+    }
+
+    .error__lien {
+        color: $color-primary;
+        text-decoration: underline;
+        font-weight: $font-500;
+        margin-top: 100px;
+    }
+
+}
+
+// Tablette 
+
+@media screen and (max-width: 1236px) {
+    .error__contend {
+        h1 {
+            font-size: 126px;
+        }
+
+        p {
+            font-size: 26px;
+        }
+    }
+}
+
+// Mobile
+
+@media screen and (max-width:768px) {
+    .error__contend {
+        h1 {
+            font-size: 96px;
+            margin-top: 80px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .error__lien {
+            font-size: 14px;
+        }
+    }
+}
